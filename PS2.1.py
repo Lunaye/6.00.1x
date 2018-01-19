@@ -11,7 +11,6 @@ def cardBalance(balance, annualInterestRate, monthlyPaymentRate):
 
     return round(balance, 2)
 
-print ('Remaining balance: ' + str(cardBalance(balance, annualInterestRate, monthlyPaymentRate)))
-        
 
-        
+print('Remaining balance: ' +
+      str(cardBalance(balance, annualInterestRate, monthlyPaymentRate)))

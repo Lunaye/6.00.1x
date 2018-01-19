@@ -10,4 +10,4 @@ while b <= strlen:
     a += 1
     b += 1
 
-print ('Number of times bob occurs is: ' + str(count))
+print('Number of times bob occurs is: ' + str(count))

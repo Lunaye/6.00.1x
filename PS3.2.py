@@ -5,6 +5,6 @@ def getGuessedWord(secretWord, lettersGuessed):
         if i in lettersGuessed:
             value = i + ' '
         else:
-            value = "_ " 
-        guess = guess + value        
+            value = "_ "
+        guess = guess + value
     return guess

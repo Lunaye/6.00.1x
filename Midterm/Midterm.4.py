@@ -12,11 +12,11 @@ def closest_power(base, num):
     power = 1
     while (base ** power) < num:
         power += 1
-    if (num - (base ** power)) == ( (base ** (power - 1) - num)):
+    if (num - (base ** power)) == ((base ** (power - 1) - num)):
         return (power - 1)
-    elif (num - (base ** power)) < ( (base ** (power + 1) - num)):
+    elif (num - (base ** power)) < ((base ** (power + 1) - num)):
         return (power)
-    elif (num - (base ** power)) < ( (base ** (power - 1) - num)):
+    elif (num - (base ** power)) < ((base ** (power - 1) - num)):
         return (power - 1)
     else:
         return (power)

@@ -4,15 +4,15 @@ def isValidWord(word, hand, wordList):
     composed of letters in the hand. Otherwise, returns False.
 
     Does not mutate hand or wordList.
-   
+
     word: string
     hand: dictionary (string -> int)
     wordList: list of lowercase strings
     """
     hand_copy = dict(hand)
     if word not in wordList:
-        return False           
-    for char in word:            
+        return False
+    for char in word:
         if char not in hand:
             return False
         elif hand_copy[char] == 0:
