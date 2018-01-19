@@ -1,4 +1,5 @@
-#Problem 3
+# Problem 3
+
 
 def convert_to_mandarin(us_num):
     '''
@@ -20,9 +21,10 @@ def convert_to_mandarin(us_num):
         sec = trans[us_num[1]]
         return first + ' shi ' + sec
 
-#Problem 7
-    
-def general_poly (L):
+# Problem 7
+
+
+def general_poly(L):
     """ L, a list of numbers (n0, n1, n2, ... nk)
     Returns a function, which when applied to a value x, returns the value
     n0 * x^k + n1 * x^(k-1) + ... nk * x^0
@@ -31,7 +33,7 @@ def general_poly (L):
         k = len(L) - 1
         sum = 0
         for number in L:
-            sum += number * x ** k   
+            sum += number * x ** k
             k -= 1
         return sum
 
